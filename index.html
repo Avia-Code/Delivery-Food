@@ -8,8 +8,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/style.css" />
 
 </head>
 
@@ -77,8 +75,7 @@
 				<div class="section-heading">
 					<h2 class="section-title">Рестораны</h2>
 					<label class="search">
-						<input  type="text" class="input input-search"
-							placeholder="Поиск блюд и ресторанов" />
+						<input type="text" class="input input-search" placeholder="Поиск блюд и ресторанов" />
 						<ul class="live-search hide">
 
 						</ul>
@@ -226,6 +223,16 @@
 	</div>
 	<script src="js/main.js"></script>
 	<script src="js/disabledScroll.js"></script>
+	<script>
+		function asyncCSS(href) {
+			var css = document.createElement('link');
+			css.rel = "stylesheet";
+			css.href = href;
+			document.head.appendChild(css);
+		}
+		asyncCSS('css/style.css');
+		asyncCSS('css/normalize.css');
+	</script>
 </body>
 
 </html>
